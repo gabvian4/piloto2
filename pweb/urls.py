@@ -24,4 +24,8 @@ urlpatterns = [
     path('sobre', views.sobre, name='sobre'),
     path('ajuda', views.ajuda, name='ajuda'),
     path('contato', views.contato, name='contato'),
+    path('local', views.local, name='local'),
+    path('exibiritem/<int:id>',views.exibirItem,name='exibiritem'),
+    path('perfil/<str:usuario>', views.perfil, name='perfil'),
+
 ]
